@@ -93,4 +93,4 @@ inline void ortho(float left, float right, float bottom, float top,
     out[3][3] = 1.0f;
 }
 
-} // namespace math
+}

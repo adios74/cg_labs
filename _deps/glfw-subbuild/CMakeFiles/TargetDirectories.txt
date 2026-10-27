@@ -1,0 +1,3 @@
+/home/sonya/Desktop/кг5/vulkan-starter-app/_deps/glfw-subbuild/CMakeFiles/glfw-populate.dir
+/home/sonya/Desktop/кг5/vulkan-starter-app/_deps/glfw-subbuild/CMakeFiles/edit_cache.dir
+/home/sonya/Desktop/кг5/vulkan-starter-app/_deps/glfw-subbuild/CMakeFiles/rebuild_cache.dir

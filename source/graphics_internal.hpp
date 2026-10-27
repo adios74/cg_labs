@@ -24,7 +24,7 @@ struct SceneUniforms {
     float ambient_color_intensity[4];
     float directional_direction[4];
     float directional_color_intensity[4];
-    float light_counts[4]; // x = point light count, y = spotlight count
+    float light_counts[4];
 };
 
 struct PointLightGpu {
@@ -43,7 +43,7 @@ struct ModelUniform {
     float model[4][4];
     float albedo[4];
     float specular_color[4];
-    float material_params[4]; // x = shininess, y = unlit marker flag
+    float material_params[4];
 };
 
 struct Context {
@@ -80,7 +80,6 @@ struct Context {
     VmaAllocation spot_lights_allocation;
     SpotLightGpu* spot_lights_mapped;
 
-    // The first two sets belong to the spheres; remaining sets visualize lights.
     static constexpr int OBJECT_COUNT = MAIN_OBJECT_COUNT + static_cast<int>(MAX_LIGHT_MARKERS);
     VkDescriptorSetLayout model_set_layout;
     VkBuffer model_uniform_buffers[OBJECT_COUNT];
